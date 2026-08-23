@@ -27,6 +27,8 @@ shows the Rev B cut of the jacket, which no photograph of her shows yet.
 | `character-turnaround.svg` / `.png` | Garment turnaround — the Rev B slim cut at five angles, drawn from the jacket spec. |
 | `character-front.svg`, `-three-quarter-front`, `-side`, `-three-quarter-back`, `-back` | Each turnaround angle on its own, sized to drop into an image model as a reference. |
 | `build/` | The scripts. `sh build/make.sh` rebuilds everything. |
+| `plates/generated/wear-turnaround-sheet.png` | A generated 8-up contact sheet of her wearing the jacket + pack at various angles (wear-front, wear-tq-left, wear-back, etc.). Stored as delivered — those labels aren't yet mapped to the `shots.json` shot IDs above, so treat it as reference, not a drop-in for the sheet builder. |
+| `Terra_Nexus_Character_Backpack_Wear_Reference_Continuity_Guide_v1.docx` | Continuity notes from the session that generated the wear sheet and the story scenes in `../Scenes/generated/`. Not yet reviewed against this README. |
 
 ## Why photography and drawing both
 
