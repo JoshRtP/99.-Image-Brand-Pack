@@ -48,6 +48,32 @@ def cut():
     return {n: Image.open(os.path.join(PLATES, n + '.png')).size for n, _, _ in CUTS}
 
 
+GEN_ROWS = [
+    ('TURNAROUND — REV B CUT, GENERATED', 640,
+     [('full-front', 'FRONT'), ('full-tq-front', 'THREE-QUARTER FRONT'),
+      ('full-side', 'SIDE'), ('full-tq-back', 'THREE-QUARTER BACK'),
+      ('full-back', 'BACK')]),
+    ('IDENTITY AND GARMENT DETAIL, GENERATED', 320,
+     [('id-face-front', 'FACE — LOCKED'), ('id-face-tq', 'FACE, THREE-QUARTER'),
+      ('cuff-left-terra', 'LEFT CUFF — TERRA'),
+      ('cuff-right-nexus', 'RIGHT CUFF — NEXUS'),
+      ('hood-down-collar', 'HOOD DOWN'), ('with-pack-back', 'WITH THE PACK'),
+      ('in-world-action', 'IN WORLD')]),
+]
+
+
+def generated():
+    d = os.path.join(PLATES, 'generated')
+    if not os.path.isdir(d):
+        return {}
+    out = {}
+    for f in os.listdir(d):
+        if f.lower().endswith(('.png', '.jpg', '.jpeg')):
+            out[os.path.splitext(f)[0]] = (os.path.join('plates', 'generated', f),
+                                           Image.open(os.path.join(d, f)).size)
+    return out
+
+
 def html(sizes):
     def plate(name, h):
         w, hh = sizes[name]
@@ -60,6 +86,37 @@ def html(sizes):
     det = ''.join(
         f'<figure class="d"><div class="frame">{plate(n, 300)}</div>'
         f'<figcaption>{label}</figcaption></figure>' for n, label in DETAIL)
+
+    gen = generated()
+    gen_html = ''
+    for title, h, items in GEN_ROWS:
+        have = [(i, lab) for i, lab in items if i in gen]
+        if not have:
+            continue
+        row = ''
+        for i, lab in have:
+            src, (w, hh) = gen[i]
+            row += (f'<figure class="p"><div class="frame">'
+                    f'<img src="{src}" width="{round(w * h / hh)}" height="{h}"></div>'
+                    f'<figcaption><b>{lab}</b><span>{i}</span></figcaption></figure>')
+        gen_html += f'<p class="lbl" style="margin-top:46px">{title}</p><div class="row">{row}</div>'
+
+    covered = {'full-front', 'full-side', 'id-face-front'} & set(gen)
+    if covered:
+        missing_block = (
+            '<h2 style="margin-top:30px">FACE AND FRONT</h2><div class="rule"></div>'
+            '<table><tr><td class="k">Now covered</td><td>Generated plates supply the '
+            'angles the story set never showed. The face in <b>id-face-front</b> is canon '
+            '— every future render must match it.</td></tr></table>')
+    else:
+        missing_block = '''<h2 style="margin-top:30px">NO REFERENCE EXISTS</h2><div class="rule"></div>
+      <table class="warn">
+        <tr><td class="k">Her face</td><td>Every frame in the set is shot from behind or
+            over the shoulder. It has never been seen. Run GENERATION-BRIEF.md shot 1 and
+            lock it, or it will drift.</td></tr>
+        <tr><td class="k">Front, side</td><td>No frame shows either. The turnaround
+            specifies them; nothing observes them.</td></tr>
+      </table>'''
 
     return f'''<!doctype html><meta charset="utf-8">
 <style>
@@ -105,6 +162,7 @@ def html(sizes):
   <div class="row">{main}</div>
   <p class="lbl" style="margin-top:46px">DETAIL</p>
   <div class="row">{det}</div>
+  {gen_html}
   <div class="cols">
     <div class="col">
       <h2>LOCKED</h2><div class="rule"></div>
@@ -133,14 +191,7 @@ def html(sizes):
         <tr><td class="k">Shoulder</td><td>Already correct — the shoulder patch has been
             removed from these frames.</td></tr>
       </table>
-      <h2 style="margin-top:30px">NO REFERENCE EXISTS</h2><div class="rule"></div>
-      <table class="warn">
-        <tr><td class="k">Her face</td><td>Every frame in the set is shot from behind or
-            over the shoulder. It has never been seen. Choose one and lock it before the
-            next generation pass, or it will drift.</td></tr>
-        <tr><td class="k">Front, side</td><td>No frame shows either. The turnaround
-            specifies them; nothing observes them.</td></tr>
-      </table>
+      {missing_block}
     </div>
   </div>
   <p class="foot">Plates cut unretouched from Ouput Pictures - Updated Images. This is the

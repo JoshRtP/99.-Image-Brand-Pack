@@ -18,6 +18,9 @@ shows the Rev B cut of the jacket, which no photograph of her shows yet.
 
 | File | What it is |
 | --- | --- |
+| **`GENERATION-BRIEF.md`** | **Start here if you have an image generator.** Twelve shots, each with its prompt and the exact reference files to attach, in the order they must be run. |
+| `shots.json` | The same shot list, machine readable, for scripting against an image API. |
+| `plates/generated/` | Where generated images go. The sheet rebuilds around whatever is there. |
 | `character-sheet.png` | **Primary.** Real photographic plates by angle, plus detail crops, the locked description, and what has no reference at all. |
 | `plates/` | The individual plates, cut unretouched from the story frames. |
 | `character-turnaround.svg` / `.png` | Garment turnaround — the Rev B slim cut at five angles, drawn from the jacket spec. |
@@ -76,6 +79,10 @@ the first pass looked like.
 ---
 
 ## Prompt kit
+
+> The full version of this — twelve shots, exact reference paths per shot, run
+> order, acceptance checks — is in **`GENERATION-BRIEF.md`**. What follows is the
+> short form.
 
 Paste the base block, then one angle line. Attach the matching
 `character-<angle>.png` and `../Jacket/jacket-flat-front.png` as references.
