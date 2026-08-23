@@ -1,5 +1,5 @@
 {
-  "base_prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.",
+  "base_prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.",
   "negative_prompt": "patch or logo on the shoulder, upper arm or chest; mountain graphic; any text other than TERRA and NEXUS on the cuffs; boxy, oversized or loose fit; parka; hood worn up; gathered or elasticated cuffs; hair loose or braided; sunglasses; hat; gloves; second person in frame; visible brand names other than Terra Nexus; text overlay; watermark",
   "face_is_a_proposal": true,
   "output_dir": "Output Drafts/Character/plates/generated",
@@ -13,24 +13,19 @@
       "order": 1,
       "aspect": "1:1",
       "lock": true,
-      "add": "Head and shoulders portrait, facing camera directly, neutral expression, plain mid-grey seamless background, soft even studio light.",
+      "supplied": true,
+      "add": "SUPPLIED, DO NOT GENERATE. This is the locked identity reference: a front portrait of the character, head and shoulders, plain grey background. Fetch it, look at it, and attach it to every other character shot. Her face must match this in every image.",
       "refs": [
-        "Output Drafts/Character/plates/near-profile.png",
-        "Output Drafts/Character/plates/d-head.png"
+        "Output Drafts/Character/plates/generated/id-face-front.png"
       ],
-      "note": "Generate several, pick one. That image becomes the identity reference attached to every later shot.",
+      "note": "Supplied by the client. Everything else about her follows from this face.",
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nHead and shoulders portrait, facing camera directly, neutral expression, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nSUPPLIED, DO NOT GENERATE. This is the locked identity reference: a front portrait of the character, head and shoulders, plain grey background. Fetch it, look at it, and attach it to every other character shot. Her face must match this in every image.",
       "references": [
         {
           "kind": "url",
-          "path": "Output Drafts/Character/plates/near-profile.png",
-          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Character/plates/near-profile.png"
-        },
-        {
-          "kind": "url",
-          "path": "Output Drafts/Character/plates/d-head.png",
-          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Character/plates/d-head.png"
+          "path": "Output Drafts/Character/plates/generated/id-face-front.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Character/plates/generated/id-face-front.png"
         }
       ]
     },
@@ -38,14 +33,14 @@
       "id": "id-face-tq",
       "order": 2,
       "aspect": "1:1",
-      "add": "Head and shoulders portrait, turned about 40 degrees from camera, plain mid-grey seamless background, soft even studio light.",
+      "add": "Head and shoulders portrait, turned about 40 degrees from camera, plain mid-grey seamless background, soft even studio light. Same woman as the supplied front portrait - match the face exactly.",
       "refs": [
         "@id-face-front",
         "Output Drafts/Character/plates/d-head.png",
         "Output Drafts/Character/plates/d-collar.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nHead and shoulders portrait, turned about 40 degrees from camera, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nHead and shoulders portrait, turned about 40 degrees from camera, plain mid-grey seamless background, soft even studio light. Same woman as the supplied front portrait - match the face exactly.",
       "references": [
         {
           "kind": "shot",
@@ -74,7 +69,7 @@
         "Output Drafts/Character/character-turnaround.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure standing square to camera, arms relaxed at her sides, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure standing square to camera, arms relaxed at her sides, plain mid-grey seamless background, soft even studio light.",
       "references": [
         {
           "kind": "shot",
@@ -102,7 +97,7 @@
         "Output Drafts/Jacket/jacket-flat-front.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure turned about 40 degrees from camera, arms relaxed, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure turned about 40 degrees from camera, arms relaxed, plain mid-grey seamless background, soft even studio light.",
       "references": [
         {
           "kind": "shot",
@@ -125,7 +120,7 @@
         "Output Drafts/Character/character-turnaround.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure in full profile, side on, arms relaxed, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure in full profile, side on, arms relaxed, plain mid-grey seamless background, soft even studio light.",
       "references": [
         {
           "kind": "shot",
@@ -149,7 +144,7 @@
         "Output Drafts/Character/plates/tq-back-left.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure turned about 140 degrees, seen mostly from behind, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure turned about 140 degrees, seen mostly from behind, plain mid-grey seamless background, soft even studio light.",
       "references": [
         {
           "kind": "shot",
@@ -173,12 +168,17 @@
       "aspect": "2:3",
       "add": "Full figure seen directly from behind, arms relaxed, plain mid-grey seamless background, soft even studio light.",
       "refs": [
+        "@id-face-front",
         "Output Drafts/Jacket/jacket-flat-back.png",
         "Output Drafts/Character/plates/back.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure seen directly from behind, arms relaxed, plain mid-grey seamless background, soft even studio light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure seen directly from behind, arms relaxed, plain mid-grey seamless background, soft even studio light.",
       "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
         {
           "kind": "url",
           "path": "Output Drafts/Jacket/jacket-flat-back.png",
@@ -198,10 +198,10 @@
       "add": "Close detail of her left wrist and cuff, arm relaxed at her side. The word TERRA in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
       "refs": [
         "Output Drafts/Patch/lockup-stacked.png",
-        "Output Drafts/Jacket/jacket-spec-sheet.png"
+        "Output Drafts/Jacket/cuff-terra.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail of her left wrist and cuff, arm relaxed at her side. The word TERRA in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail of her left wrist and cuff, arm relaxed at her side. The word TERRA in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
       "references": [
         {
           "kind": "url",
@@ -210,8 +210,8 @@
         },
         {
           "kind": "url",
-          "path": "Output Drafts/Jacket/jacket-spec-sheet.png",
-          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/jacket-spec-sheet.png"
+          "path": "Output Drafts/Jacket/cuff-terra.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/cuff-terra.png"
         }
       ]
     },
@@ -222,10 +222,10 @@
       "add": "Close detail of her right wrist and cuff. The word NEXUS in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
       "refs": [
         "Output Drafts/Patch/lockup-stacked.png",
-        "Output Drafts/Jacket/jacket-spec-sheet.png"
+        "Output Drafts/Jacket/cuff-nexus.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail of her right wrist and cuff. The word NEXUS in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail of her right wrist and cuff. The word NEXUS in white block capitals wraps around the cuff. Thumbhole visible. Plain mid-grey background, soft even light.",
       "references": [
         {
           "kind": "url",
@@ -234,8 +234,8 @@
         },
         {
           "kind": "url",
-          "path": "Output Drafts/Jacket/jacket-spec-sheet.png",
-          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/jacket-spec-sheet.png"
+          "path": "Output Drafts/Jacket/cuff-nexus.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/cuff-nexus.png"
         }
       ]
     },
@@ -249,7 +249,7 @@
         "Output Drafts/Jacket/jacket-flat-back.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail from behind of the hood worn down and bunched behind the neck, showing the raglan seams and back yoke. Plain mid-grey background, soft even light.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nClose detail from behind of the hood worn down and bunched behind the neck, showing the raglan seams and back yoke. Plain mid-grey background, soft even light.",
       "references": [
         {
           "kind": "url",
@@ -274,7 +274,7 @@
         "Ouput Pictures - Updated Images/9. Story 6 - FINAL.png"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure from behind wearing a rust-orange hiking pack over the shell. A dark red rectangular embroidered patch reading TERRA NEXUS sits centred on the pack's upper front panel. Golden hour, low sun, alpine ridge.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure from behind wearing a rust-orange hiking pack over the shell. A dark red rectangular embroidered patch reading TERRA NEXUS sits centred on the pack's upper front panel. Golden hour, low sun, alpine ridge.",
       "references": [
         {
           "kind": "url",
@@ -303,7 +303,7 @@
         "@id-face-front"
       ],
       "group": "character",
-      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late twenties to early thirties. Oval face with a defined jaw and a straight nose. Fair skin with a warm undertone, light freckling across the nose and cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown eyebrows. No makeup beyond what survives a day outdoors. Calm, focused expression - attentive rather than smiling.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nStanding on an alpine ridge at golden hour, looking out across a valley, wearing the pack. Warm rim light on hair and shoulders. Matches the look of the existing story set.",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nStanding on an alpine ridge at golden hour, looking out across a valley, wearing the pack. Warm rim light on hair and shoulders. Matches the look of the existing story set.",
       "references": [
         {
           "kind": "url",
@@ -519,6 +519,186 @@
           "kind": "url",
           "path": "Output Drafts/Jacket/jacket-colourways.png",
           "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/jacket-colourways.png"
+        }
+      ]
+    },
+    {
+      "id": "series-holding-pack",
+      "order": 21,
+      "aspect": "2:3",
+      "add": "Full figure, turned about 30 degrees from camera, carrying a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters in one hand by its haul loop, down at her side, so the stitched wordmark faces the camera and is clearly readable. Golden hour, low sun, alpine ridge behind her.",
+      "refs": [
+        "@id-face-front",
+        "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+        "Output Drafts/Direct-Stitch/stitch-deep-red.png",
+        "Output Drafts/Jacket/jacket-flat-front.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure, turned about 30 degrees from camera, carrying a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters in one hand by its haul loop, down at her side, so the stitched wordmark faces the camera and is clearly readable. Golden hour, low sun, alpine ridge behind her.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-deep-red.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Jacket/jacket-flat-front.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/jacket-flat-front.png"
+        }
+      ]
+    },
+    {
+      "id": "series-pack-shouldered",
+      "order": 22,
+      "aspect": "2:3",
+      "add": "Full figure, three-quarter front, a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters slung over one shoulder by a single strap, the stitched panel turned towards the camera. Golden hour, alpine.",
+      "refs": [
+        "@id-face-front",
+        "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+        "Output Drafts/Jacket/jacket-flat-front.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure, three-quarter front, a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters slung over one shoulder by a single strap, the stitched panel turned towards the camera. Golden hour, alpine.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Jacket/jacket-flat-front.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/jacket-flat-front.png"
+        }
+      ]
+    },
+    {
+      "id": "series-wearing-pack-back",
+      "order": 23,
+      "aspect": "2:3",
+      "add": "Full figure from behind, wearing a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters on both shoulders. The stitched wordmark sits on the outward-facing panel and is visible. Golden hour, alpine ridge, warm rim light on her hair and shoulders.",
+      "refs": [
+        "@id-face-front",
+        "Output Drafts/Character/plates/back.png",
+        "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure from behind, wearing a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters on both shoulders. The stitched wordmark sits on the outward-facing panel and is visible. Golden hour, alpine ridge, warm rim light on her hair and shoulders.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Character/plates/back.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Character/plates/back.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+        }
+      ]
+    },
+    {
+      "id": "series-cuff-and-pack",
+      "order": 24,
+      "aspect": "3:2",
+      "add": "Waist-up, three-quarter view, both hands raised to adjust a shoulder strap of a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters. Her left cuff is in frame with TERRA wrapping it in white block capitals. Both the cuff wordmark and the stitched pack wordmark are readable in the same frame. Golden hour.",
+      "refs": [
+        "@id-face-front",
+        "Output Drafts/Jacket/cuff-terra.png",
+        "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nWaist-up, three-quarter view, both hands raised to adjust a shoulder strap of a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters. Her left cuff is in frame with TERRA wrapping it in white block capitals. Both the cuff wordmark and the stitched pack wordmark are readable in the same frame. Golden hour.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Jacket/cuff-terra.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Jacket/cuff-terra.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+        }
+      ]
+    },
+    {
+      "id": "series-trail-walking",
+      "order": 25,
+      "aspect": "2:3",
+      "add": "Full figure walking away along a ridge line, wearing a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters. Seen from behind and slightly to one side. Golden hour, long shadows.",
+      "refs": [
+        "@id-face-front",
+        "Output Drafts/Character/plates/back.png",
+        "Ouput Pictures - Updated Images/9. Story 6 - FINAL.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nFull figure walking away along a ridge line, wearing a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters. Seen from behind and slightly to one side. Golden hour, long shadows.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Character/plates/back.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Character/plates/back.png"
+        },
+        {
+          "kind": "url",
+          "path": "Ouput Pictures - Updated Images/9. Story 6 - FINAL.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Ouput%20Pictures%20-%20Updated%20Images/9.%20Story%206%20-%20FINAL.png"
+        }
+      ]
+    },
+    {
+      "id": "series-golden-hour-hero",
+      "order": 26,
+      "aspect": "3:2",
+      "add": "Hero frame. She stands on an alpine ridge at golden hour looking out across a valley, a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters at her feet or held loosely at her side with the stitched panel catching the light. Wide, cinematic, matching the look of the existing story set.",
+      "refs": [
+        "@id-face-front",
+        "Ouput Pictures - Updated Images/1. Opening Scene - FINAL.png",
+        "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
+      ],
+      "group": "series",
+      "prompt": "A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair\nwith warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the\ncrown. Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered skin with a warm undertone and clear freckling across the nose and upper cheeks. Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No makeup. Mouth closed, expression level and unsmiling - self-possessed rather than posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the face with loose curling strands escaping at the temples and crown.\n\nShe wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in\nglacier blue (#5A90BE). Raglan sleeves. Princess seams front and back running from the\nraglan seam through the waist to the hem, giving a clearly nipped waist. Hood worn down,\nbunched behind the neck. Full-length front zip, closed, with a small red zip pull. Two\nzipped hand pockets. Long shaped cuffs with thumbholes, lying flat - not gathered or\nelasticated. Hem falls to the hip and is scooped slightly lower at centre back.\n\nBlock capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right,\nprinted in white. The jacket carries no other marking of any kind.\n\nBelow: slim dark charcoal technical trousers and low brown approach boots.\n\nPhotographic, sharp, natural skin texture.\n\nHero frame. She stands on an alpine ridge at golden hour looking out across a valley, a rust-orange technical hiking pack. On the pack's upper outward-facing panel the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block. The thread is a faded deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. There is no patch, no border and no background panel behind the letters at her feet or held loosely at her side with the stitched panel catching the light. Wide, cinematic, matching the look of the existing story set.",
+      "references": [
+        {
+          "kind": "shot",
+          "shot": "id-face-front"
+        },
+        {
+          "kind": "url",
+          "path": "Ouput Pictures - Updated Images/1. Opening Scene - FINAL.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Ouput%20Pictures%20-%20Updated%20Images/1.%20Opening%20Scene%20-%20FINAL.png"
+        },
+        {
+          "kind": "url",
+          "path": "Output Drafts/Direct-Stitch/stitch-on-bag-deep-red.png",
+          "url": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-on-bag-deep-red.png"
         }
       ]
     }

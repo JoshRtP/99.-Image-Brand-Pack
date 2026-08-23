@@ -15,11 +15,15 @@ def url(path):
     """Repo-relative path -> fetchable raw URL. Folder names contain spaces."""
     return REPO_RAW + quote(path)
 
-FACE = ("Late twenties to early thirties. Oval face with a defined jaw and a straight "
-        "nose. Fair skin with a warm undertone, light freckling across the nose and "
-        "cheekbones, weathered slightly by sun and wind. Grey-green eyes, mid-brown "
-        "eyebrows. No makeup beyond what survives a day outdoors. Calm, focused "
-        "expression - attentive rather than smiling.")
+FACE = ("Late thirties. Oval face with a defined jaw and a straight nose. Sun-weathered "
+        "skin with a warm undertone and clear freckling across the nose and upper cheeks. "
+        "Green-hazel eyes, strong straight mid-brown brows, fine lines at the eyes. No "
+        "makeup. Mouth closed, expression level and unsmiling - self-possessed rather than "
+        "posed. Mid-brown hair with sun-lightened caramel highlights, pulled back off the "
+        "face with loose curling strands escaping at the temples and crown.")
+
+# The locked identity reference. Supplied by the client - not generated.
+FACE_PLATE = 'Output Drafts/Character/plates/generated/id-face-front.png'
 
 BASE = f"""A woman in her late twenties, athletic build, about 168 cm tall. Mid-brown hair
 with warm highlights, pulled into a mid-height ponytail, loose flyaway strands at the
@@ -67,13 +71,16 @@ PATCH = 'Output Drafts/Patch/'
 SCENES = 'Ouput Pictures - Updated Images/'
 
 SHOTS = [
-    dict(id='id-face-front', order=1, aspect='1:1', lock=True,
-         add=f'Head and shoulders portrait, facing camera directly, neutral expression, {STUDIO}.',
-         refs=[P + 'near-profile.png', P + 'd-head.png'],
-         note='Generate several, pick one. That image becomes the identity reference '
-              'attached to every later shot.'),
+    dict(id='id-face-front', order=1, aspect='1:1', lock=True, supplied=True,
+         add='SUPPLIED, DO NOT GENERATE. This is the locked identity reference: a front '
+             'portrait of the character, head and shoulders, plain grey background. Fetch '
+             'it, look at it, and attach it to every other character shot. Her face must '
+             'match this in every image.',
+         refs=[FACE_PLATE],
+         note='Supplied by the client. Everything else about her follows from this face.'),
     dict(id='id-face-tq', order=2, aspect='1:1',
-         add=f'Head and shoulders portrait, turned about 40 degrees from camera, {STUDIO}.',
+         add=f'Head and shoulders portrait, turned about 40 degrees from camera, {STUDIO}. '
+             f'Same woman as the supplied front portrait - match the face exactly.',
          refs=['@id-face-front', P + 'd-head.png', P + 'd-collar.png']),
     dict(id='full-front', order=3, aspect='2:3',
          add=f'Full figure standing square to camera, arms relaxed at her sides, {STUDIO}.',
@@ -90,17 +97,17 @@ SHOTS = [
          refs=['@id-face-front', J + 'jacket-flat-back.png', P + 'tq-back-left.png']),
     dict(id='full-back', order=7, aspect='2:3',
          add=f'Full figure seen directly from behind, arms relaxed, {STUDIO}.',
-         refs=[J + 'jacket-flat-back.png', P + 'back.png']),
+         refs=['@id-face-front', J + 'jacket-flat-back.png', P + 'back.png']),
     dict(id='cuff-left-terra', order=8, aspect='3:2',
          add='Close detail of her left wrist and cuff, arm relaxed at her side. The word '
              'TERRA in white block capitals wraps around the cuff. Thumbhole visible. '
              'Plain mid-grey background, soft even light.',
-         refs=[PATCH + 'lockup-stacked.png', J + 'jacket-spec-sheet.png']),
+         refs=[PATCH + 'lockup-stacked.png', J + 'cuff-terra.png']),
     dict(id='cuff-right-nexus', order=9, aspect='3:2',
          add='Close detail of her right wrist and cuff. The word NEXUS in white block '
              'capitals wraps around the cuff. Thumbhole visible. Plain mid-grey '
              'background, soft even light.',
-         refs=[PATCH + 'lockup-stacked.png', J + 'jacket-spec-sheet.png']),
+         refs=[PATCH + 'lockup-stacked.png', J + 'cuff-nexus.png']),
     dict(id='hood-down-collar', order=10, aspect='3:2',
          add='Close detail from behind of the hood worn down and bunched behind the neck, '
              'showing the raglan seams and back yoke. Plain mid-grey background, soft '
@@ -117,6 +124,54 @@ SHOTS = [
              'wearing the pack. Warm rim light on hair and shoulders. Matches the look of '
              'the existing story set.',
          refs=[SCENES + '1. Opening Scene - FINAL.png', '@id-face-front']),
+]
+
+# The pack no longer carries a sewn patch. The wordmark is stitched straight into
+# the fabric in a faded oxblood thread - see Output Drafts/Direct-Stitch.
+PACK = ('a rust-orange technical hiking pack. On the pack\'s upper outward-facing panel the '
+        'words TERRA and NEXUS are embroidered directly into the fabric in heavy block '
+        'capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same '
+        'width with their left edges aligned, forming a squared-off block. The thread is a '
+        'faded deep oxblood red only slightly darker than the rust-orange fabric, so the '
+        'lettering reads mostly as raised texture and catches the light along its top edges. '
+        'There is no patch, no border and no background panel behind the letters')
+
+STITCH = 'Output Drafts/Direct-Stitch/'
+
+SERIES_SHOTS = [
+    dict(id='series-holding-pack', order=21, aspect='2:3',
+         add=f'Full figure, turned about 30 degrees from camera, carrying {PACK} in one hand '
+             f'by its haul loop, down at her side, so the stitched wordmark faces the camera '
+             f'and is clearly readable. Golden hour, low sun, alpine ridge behind her.',
+         refs=['@id-face-front', STITCH + 'stitch-on-bag-deep-red.png',
+               STITCH + 'stitch-deep-red.png', J + 'jacket-flat-front.png']),
+    dict(id='series-pack-shouldered', order=22, aspect='2:3',
+         add=f'Full figure, three-quarter front, {PACK} slung over one shoulder by a single '
+             f'strap, the stitched panel turned towards the camera. Golden hour, alpine.',
+         refs=['@id-face-front', STITCH + 'stitch-on-bag-deep-red.png',
+               J + 'jacket-flat-front.png']),
+    dict(id='series-wearing-pack-back', order=23, aspect='2:3',
+         add=f'Full figure from behind, wearing {PACK} on both shoulders. The stitched '
+             f'wordmark sits on the outward-facing panel and is visible. Golden hour, alpine '
+             f'ridge, warm rim light on her hair and shoulders.',
+         refs=['@id-face-front', P + 'back.png', STITCH + 'stitch-on-bag-deep-red.png']),
+    dict(id='series-cuff-and-pack', order=24, aspect='3:2',
+         add=f'Waist-up, three-quarter view, both hands raised to adjust a shoulder strap of '
+             f'{PACK}. Her left cuff is in frame with TERRA wrapping it in white block '
+             f'capitals. Both the cuff wordmark and the stitched pack wordmark are readable '
+             f'in the same frame. Golden hour.',
+         refs=['@id-face-front', J + 'cuff-terra.png', STITCH + 'stitch-on-bag-deep-red.png']),
+    dict(id='series-trail-walking', order=25, aspect='2:3',
+         add=f'Full figure walking away along a ridge line, wearing {PACK}. Seen from behind '
+             f'and slightly to one side. Golden hour, long shadows.',
+         refs=['@id-face-front', P + 'back.png', SCENES + '9. Story 6 - FINAL.png']),
+    dict(id='series-golden-hour-hero', order=26, aspect='3:2',
+         add=f'Hero frame. She stands on an alpine ridge at golden hour looking out across a '
+             f'valley, {PACK} at her feet or held loosely at her side with the stitched panel '
+             f'catching the light. Wide, cinematic, matching the look of the existing story '
+             f'set.',
+         refs=['@id-face-front', SCENES + '1. Opening Scene - FINAL.png',
+               STITCH + 'stitch-on-bag-deep-red.png']),
 ]
 
 JACKET_SHOTS = [
@@ -154,7 +209,7 @@ JACKET_SHOTS = [
          refs=[J + 'jacket-flat-front-red.png', J + 'jacket-colourways.png']),
 ]
 
-SHOTS = SHOTS + JACKET_SHOTS
+SHOTS = SHOTS + JACKET_SHOTS + SERIES_SHOTS
 
 CHECKS = [
     'Same face as shot 1, not a lookalike',
@@ -183,7 +238,8 @@ def payload():
         'shots': [
             dict(
                 s,
-                group='jacket' if s.get('base') == 'jacket' else 'character',
+                group=('jacket' if s.get('base') == 'jacket'
+                       else 'series' if s['id'].startswith('series-') else 'character'),
                 prompt=(JACKET_BASE if s.get('base') == 'jacket' else BASE) + '\n\n' + s['add'],
                 references=[
                     {'kind': 'shot', 'shot': r[1:]} if r.startswith('@')
@@ -201,18 +257,22 @@ def check():
     """Every reference the brief names must actually be in the repo."""
     root = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
     ids = {s['id'] for s in SHOTS}
-    bad = []
+    bad, pending = [], []
     for s in SHOTS:
         for r in s['refs']:
             if r.startswith('@'):
                 if r[1:] not in ids:
                     bad.append((s['id'], r, 'unknown shot'))
             elif not os.path.isfile(os.path.join(root, r)):
-                bad.append((s['id'], r, 'missing file'))
+                # generated plates are supplied later, so their absence is a
+                # state to report, not a build failure
+                (pending if '/generated/' in r else bad).append((s['id'], r, 'missing file'))
     for shot, ref, why in bad:
-        print(f'  BAD  {shot}: {ref}  ({why})')
-    print(f'{len(SHOTS)} shots, '
-          f'{sum(len(s["refs"]) for s in SHOTS)} references, {len(bad)} broken')
+        print(f'  BAD      {shot}: {ref}  ({why})')
+    for shot, ref, _ in pending:
+        print(f'  PENDING  {shot}: {ref}  (supply this file to lock it)')
+    print(f'{len(SHOTS)} shots, {sum(len(s["refs"]) for s in SHOTS)} references, '
+          f'{len(bad)} broken, {len(pending)} pending')
     return 1 if bad else 0
 
 
@@ -225,6 +285,7 @@ if __name__ == '__main__':
         print(f'wrote {os.path.relpath(path, OUT)}')
     else:
         for s in SHOTS:
-            g = 'jacket' if s.get('base') == 'jacket' else 'character'
+            g = ('jacket' if s.get('base') == 'jacket'
+                 else 'series' if s['id'].startswith('series-') else 'character')
             print(f"{s['order']:2d}  {s['id']:<20} {g:<9} {s['aspect']:<4} "
                   f"{len(s['refs'])} refs{'  [LOCK]' if s.get('lock') else ''}")
