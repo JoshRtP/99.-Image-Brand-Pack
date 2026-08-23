@@ -26,7 +26,7 @@ def viewbox(svg):
     return [float(v) for v in re.search(r'viewBox="([\d.\- ]+)"', tag).group(1).split()]
 
 
-def render(svg_path, png_path, width):
+def render(svg_path, png_path, width, verify_aspect=True):
     svg = open(svg_path).read()
     _, _, vw, vh = viewbox(svg)
     height = round(width * vh / vw)
@@ -54,12 +54,18 @@ def render(svg_path, png_path, width):
         im = im.crop((0, 0, width, height))
         im.save(png_path)
 
-    verify(png_path, vw / vh)
+    if verify_aspect:
+        verify(png_path, vw / vh)
     print(f'  {os.path.basename(png_path)}  {width}x{height}')
 
 
 def verify(png_path, want, tol=0.02):
-    """The drawn content must still carry the viewBox's aspect ratio."""
+    """The drawn content must still carry the viewBox's aspect ratio.
+
+    Pass verify_aspect=False for artwork that deliberately sits inside a padded
+    viewBox - a transparent plate with room for its own drop shadow, say - where
+    content and viewBox are not meant to match.
+    """
     a = np.asarray(Image.open(png_path).convert('RGBA'))
     solid = a[..., 3] > 200
     rows, cols = solid.sum(axis=1), solid.sum(axis=0)
