@@ -1,14 +1,16 @@
-# Main character — costume reference, Rev A
+# Main character — reference, Rev A
 
-How the main character should look in the new wind shell, at five angles.
+Who she is and how she should look, for anyone rendering her next.
 
-![Turnaround](character-turnaround.png)
+![Character sheet](character-sheet.png)
 
-> **Read this first.** These are *costume* references, not a likeness. I have no
-> image generator in this environment, so I could not produce photoreal renders.
-> What is here instead: a turnaround built from the real garment geometry, a
-> locked wardrobe description, and a prompt kit so whoever does have a generator
-> gets the same character every time.
+**`character-sheet.png` is the primary reference.** It is real photography — the
+character exactly as she has been rendered — cut from the corrected story frames,
+which already carry the Deep Red pack patch and have the shoulder patch removed.
+No illustration, no retouching.
+
+The vector turnaround alongside it is a *garment* reference, not a likeness: it
+shows the Rev B cut of the jacket, which no photograph of her shows yet.
 
 ---
 
@@ -16,9 +18,18 @@ How the main character should look in the new wind shell, at five angles.
 
 | File | What it is |
 | --- | --- |
-| `character-turnaround.svg` / `.png` | All five angles on one sheet, with the wardrobe locked and the open questions flagged. |
-| `character-front.svg`, `-three-quarter-front`, `-side`, `-three-quarter-back`, `-back` | Each angle on its own, sized to drop straight into an image model as a reference. |
+| `character-sheet.png` | **Primary.** Real photographic plates by angle, plus detail crops, the locked description, and what has no reference at all. |
+| `plates/` | The individual plates, cut unretouched from the story frames. |
+| `character-turnaround.svg` / `.png` | Garment turnaround — the Rev B slim cut at five angles, drawn from the jacket spec. |
+| `character-front.svg`, `-three-quarter-front`, `-side`, `-three-quarter-back`, `-back` | Each turnaround angle on its own, sized to drop into an image model as a reference. |
 | `build/` | The scripts. `sh build/make.sh` rebuilds everything. |
+
+## Why photography and drawing both
+
+Every angle that exists of her is a back or three-quarter-back view — the story
+set never turns her round. So the photography can show *her* but not the front of
+the garment, and the turnaround can show the garment but not *her*. Use the sheet
+for identity, styling and light; use the turnaround for the Rev B cut.
 
 ---
 
