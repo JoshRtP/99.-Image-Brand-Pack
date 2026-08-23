@@ -1,0 +1,109 @@
+{
+  "name": "Terra Nexus direct raised stitch",
+  "summary": "Block wordmark embroidered straight onto the pack panel, tone on tone. Replaces the sewn patch - do not run both.",
+  "arrangement": {
+    "stack": "TERRA directly over NEXUS",
+    "alignment": "left edges aligned, both lines tracked to the same width",
+    "note": "This is NOT the approved lockup, which indents NEXUS by 0.592 cap heights and carries the star. Squared off for reliable generation.",
+    "star": "omitted - the star cannot be foamed at this size"
+  },
+  "geometry_mm": {
+    "width": 85.0,
+    "height": 45.77,
+    "cap_height": 21.45,
+    "stem": 4.12,
+    "narrowest_bar": 3.52,
+    "minimum_width": 55
+  },
+  "fabric_reference": {
+    "sunlit": "#AA642F",
+    "mid": "#662B09",
+    "shadow": "#441801",
+    "source": "sampled from the story set"
+  },
+  "construction": {
+    "method": "3D foam satin, 2 mm foam under the columns",
+    "underlay": "centre-run plus edge-walk, 0.25 mm inset",
+    "pitch_mm": 0.38,
+    "backing": "cut-away, 50 g",
+    "placement": "centred on the upper front panel, top of the wordmark 40 mm below the lid seam"
+  },
+  "production_artwork": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-flat.svg",
+  "comparison_sheet": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-colourways.png",
+  "spec_sheet": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-spec-sheet.png",
+  "recommended": "deep-red",
+  "threads": [
+    {
+      "id": "deep-red",
+      "name": "Terra Nexus Deep Red",
+      "hex": "#6A1B32",
+      "contrast_on_shaded_fabric": 1.06,
+      "contrast_in_sunlight": 2.51,
+      "note": "Recommended. Effectively invisible as colour on shaded fabric; stays warm so it never reads as a stain; ties to the Deep Red patch.",
+      "prompt_phrase": "a deep oxblood red only slightly darker than the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a deep oxblood red only slightly darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-deep-red.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-deep-red-alpha.png"
+    },
+    {
+      "id": "warm-charcoal",
+      "name": "Warm Charcoal",
+      "hex": "#53494B",
+      "contrast_on_shaded_fabric": 1.26,
+      "contrast_in_sunlight": 1.88,
+      "note": "Most consistent - contrast barely moves between shade and full sun.",
+      "prompt_phrase": "a warm dark charcoal, close in value to the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a warm dark charcoal, close in value to the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-warm-charcoal.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-warm-charcoal-alpha.png"
+    },
+    {
+      "id": "olive",
+      "name": "Olive",
+      "hex": "#425316",
+      "contrast_on_shaded_fabric": 1.29,
+      "contrast_in_sunlight": 1.84,
+      "note": "Quietest overall across all lighting.",
+      "prompt_phrase": "a deep olive green, close in value to the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a deep olive green, close in value to the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-olive.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-olive-alpha.png"
+    },
+    {
+      "id": "slate-purple",
+      "name": "Slate Purple",
+      "hex": "#49475B",
+      "contrast_on_shaded_fabric": 1.22,
+      "contrast_in_sunlight": 1.95,
+      "note": "Quiet, but casts cooler than the fabric.",
+      "prompt_phrase": "a muted slate purple, close in value to the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a muted slate purple, close in value to the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-slate-purple.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-slate-purple-alpha.png"
+    },
+    {
+      "id": "ink",
+      "name": "Terra Nexus Ink",
+      "hex": "#061927",
+      "contrast_on_shaded_fabric": 1.63,
+      "contrast_in_sunlight": 3.88,
+      "note": "Quiet in shade, reads clearly dark in direct sun.",
+      "prompt_phrase": "a near-black ink blue, darker than the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a near-black ink blue, darker than the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-ink.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-ink-alpha.png"
+    },
+    {
+      "id": "sand",
+      "name": "Terra Nexus Sand",
+      "hex": "#E8D77E",
+      "contrast_on_shaded_fabric": 7.54,
+      "contrast_in_sunlight": 3.17,
+      "note": "Control. This is what NOT blending looks like - do not use to blend.",
+      "prompt_phrase": "a pale sand yellow that contrasts clearly against the rust-orange fabric",
+      "scene_prompt": "On the pack's upper front panel, the words TERRA and NEXUS are embroidered directly into the fabric in heavy block capitals - TERRA on the first line, NEXUS directly beneath it, both lines the same width with their left edges aligned, forming a squared-off block about 85 mm wide. The thread is a pale sand yellow that contrasts clearly against the rust-orange fabric, so the lettering reads mostly as raised texture and catches the light along its top edges. The stitching stands proud of the panel and casts a soft shadow. There is no patch, no border, no background panel behind the letters, and no other graphic.",
+      "swatch_on_fabric": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-sand.png",
+      "transparent_plate": "https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/stitch-sand-alpha.png"
+    }
+  ]
+}

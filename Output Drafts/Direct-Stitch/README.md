@@ -117,6 +117,40 @@ no border, no background panel behind the letters, and no other graphic.
 Swap the thread description if you pick a different colourway:
 warm charcoal → `a warm dark charcoal`, olive → `a deep olive green`.
 
+## Pointing an agent at this
+
+The repository is public, so these fetch without authentication.
+
+**One URL for everything** — thread list, contrast figures, geometry, construction,
+and a ready-made scene prompt per thread:
+
+```
+https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/threads.json
+```
+
+Individual assets, same folder:
+
+| Asset | File |
+| --- | --- |
+| Production artwork, true size | `stitch-flat.svg` |
+| Specification | `stitch-spec-sheet.png` |
+| All six threads on fabric | `stitch-colourways.png` |
+| One thread on fabric | `stitch-<id>.png` |
+| Stitching on transparent, for compositing | `stitch-<id>-alpha.png` |
+| On the real pack, before / after | `stitch-on-bag-<id>.png` |
+
+Thread ids: `deep-red`, `warm-charcoal`, `olive`, `slate-purple`, `ink`, `sand`.
+
+Prefix any of them with:
+
+```
+https://raw.githubusercontent.com/JoshRtP/99.-Image-Brand-Pack/main/Output%20Drafts/Direct-Stitch/
+```
+
+Note the `%20` — the folder name has a space in it. Browsing rather than
+fetching:
+<https://github.com/JoshRtP/99.-Image-Brand-Pack/tree/main/Output%20Drafts/Direct-Stitch>
+
 ## Rebuilding
 
 ```sh
