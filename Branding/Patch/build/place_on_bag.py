@@ -81,7 +81,7 @@ def warp_onto(patch, H, shape):
     return out
 
 
-def build(patch_png, out_crop):
+def build(patch_png, out_crop, mode='ba'):
     scene = Image.open(SCENE).convert('RGB')
     base = np.asarray(scene).astype(np.float64)
     H, W = base.shape[:2]
@@ -148,15 +148,19 @@ def build(patch_png, out_crop):
            int(quad[:, 0].max()) + 70, int(quad[:, 1].max()) + 60)
     before = scene.crop(box)
     after = Image.fromarray(out.astype(np.uint8)).crop(box)
-    w, h = before.size
-    sheet = Image.new('RGB', (w * 2 + 24, h), (244, 242, 236))
-    sheet.paste(before, (0, 0)); sheet.paste(after, (w + 24, 0))
-    sheet = sheet.resize((sheet.width * 3, sheet.height * 3), Image.LANCZOS)
-    sheet.save(out_crop)
+    if mode == 'after':
+        after = after.resize((after.width * 3, after.height * 3), Image.LANCZOS)
+        after.save(out_crop)
+    else:
+        w, h = before.size
+        sheet = Image.new('RGB', (w * 2 + 24, h), (244, 242, 236))
+        sheet.paste(before, (0, 0)); sheet.paste(after, (w + 24, 0))
+        sheet = sheet.resize((sheet.width * 3, sheet.height * 3), Image.LANCZOS)
+        sheet.save(out_crop)
     print('quad', np.round(quad, 1).tolist(),
           f'| patch {new_w / bleed:.1f} x {new_h * 36 / 40:.1f} px on a {PANEL_W:.0f}px panel')
 
 
 if __name__ == '__main__':
     import sys
-    build(sys.argv[1], sys.argv[2])
+    build(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else 'ba')

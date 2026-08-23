@@ -155,7 +155,7 @@ def build():
 
   <line x1="20" y1="223" x2="{W - 20}" y2="223" stroke="{INK}" stroke-opacity="0.25" stroke-width="0.3"/>
   {txt(20, 228.5, 'Production artwork: Branding/Patch/patch-flat.svg', 2.7, INK, 'start', '400', MONO, 0, 0.6)}
-  {txt(W - 20, 228.5, 'One patch design, used identically across the whole story set.', 2.7, INK, 'end', '400', FONT, 0, 0.6)}
+  {txt(W - 20, 228.5, 'Navy shown. Deep Red #6A1B32 and Ink #061927 are identical but for the ground - see patch-colourways.svg.', 2.7, INK, 'end', '400', FONT, 0, 0.6)}
 </svg>
 '''
 

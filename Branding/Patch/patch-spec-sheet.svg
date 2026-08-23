@@ -120,5 +120,5 @@
 
   <line x1="20" y1="223" x2="320.0" y2="223" stroke="#061927" stroke-opacity="0.25" stroke-width="0.3"/>
   <text x="20.00" y="228.50" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="2.7" font-weight="400" fill="#061927" text-anchor="start" letter-spacing="0" opacity="0.6">Production artwork: Branding/Patch/patch-flat.svg</text>
-  <text x="320.00" y="228.50" font-family="'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="2.7" font-weight="400" fill="#061927" text-anchor="end" letter-spacing="0" opacity="0.6">One patch design, used identically across the whole story set.</text>
+  <text x="320.00" y="228.50" font-family="'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="2.7" font-weight="400" fill="#061927" text-anchor="end" letter-spacing="0" opacity="0.6">Navy shown. Deep Red #6A1B32 and Ink #061927 are identical but for the ground - see patch-colourways.svg.</text>
 </svg>

@@ -1,22 +1,30 @@
 # Terra Nexus embroidered backpack patch — Rev A
 
-The single sewn patch that goes on the pack in every scene of the story set.
-It is the **approved stacked lockup — TERRA over NEXUS with the star — on Terra
-Nexus navy**, drawn to a real finished size so it can be quoted, stitched, and
-rendered consistently.
+The single sewn patch that goes on the pack in every scene of the story set:
+the **approved stacked lockup — TERRA over NEXUS with the star** — drawn to a
+real finished size so it can be quoted, stitched, and rendered consistently.
 
-![Patch](patch-embroidered.png)
+It comes in **three colourways** sharing one geometry, each available new or
+lightly worn.
+
+![Colourways](patch-colourways.png)
 
 ---
 
 ## Files
 
+Every SVG has a matching PNG export at 2000 px (2400 px for the sheets).
+
 | File | What it is |
 | --- | --- |
-| `patch-flat.svg` | Production artwork. 1 user unit = 1 mm, so the file opens at true size. Send this to the mill. |
-| `patch-flat.png` | Same artwork, 2000 px, transparent ground. |
-| `patch-embroidered.svg` / `.png` | Rendering treatment — twill ground, satin stitching, merrowed edge. Use this as the visual reference for image work, **not** for production. |
-| `patch-spec-sheet.svg` / `.png` | Dimensioned technical drawing with thread colours and construction notes. |
+| `patch-flat.svg` | Production artwork, navy. 1 user unit = 1 mm, so the file opens at true size. Send this to the mill. |
+| `patch-flat-red.svg`, `patch-flat-ink.svg` | The same artwork on the other two grounds. |
+| `patch-embroidered.svg` | Rendering treatment — twill ground, satin stitching, merrowed edge. Visual reference for image work, **not** for production. |
+| `patch-embroidered-red.svg`, `-ink.svg` | The other two colourways, same treatment. |
+| `patch-embroidered-worn.svg`, `-red-worn.svg`, `-ink-worn.svg` | Lightly worn renders — faded thread, trail dust, fibre bloom. Rendering only. |
+| `patch-colourways.svg` | All six side by side, with hex values. |
+| `patch-colourways-on-bag.png` | All six composited onto the pack in scene 6 at true scale — the sheet to choose from. |
+| `patch-spec-sheet.svg` | Dimensioned technical drawing with thread colours and construction notes. |
 | `patch-placement-reference.png` | Scene 6 before / after: the non-conforming patch removed, the approved patch laid back at true physical scale. |
 | `lockup-stacked.svg` | The approved stacked lockup on its own, normalised to cap height 100. Useful well beyond the patch. |
 | `build/` | The scripts that generate everything above. See [Rebuilding](#rebuilding). |
@@ -36,18 +44,40 @@ rendered consistently.
 
 ### Colours
 
-| Swatch | Name | Hex | RGB | Used for |
-| --- | --- | --- | --- | --- |
-| ■ | Terra Nexus Navy | `#131F48` | 19 · 31 · 72 | ground and merrowed edge |
-| □ | White | `#FFFFFF` | 255 · 255 · 255 | wordmark |
-| ▨ | Terra Nexus Sand | `#E8D77E` | 232 · 215 · 126 | star |
+Three threads, no more. Two of them never change:
 
-Three threads, no more. The white-wordmark / sand-star pairing is the brand's
-own two-colour relationship from `Trasnparent-StdLogo.png`, transposed onto navy.
+| Name | Hex | RGB | Used for |
+| --- | --- | --- | --- |
+| White | `#FFFFFF` | 255 · 255 · 255 | wordmark |
+| Terra Nexus Sand | `#E8D77E` | 232 · 215 · 126 | star |
+
+The white-wordmark / sand-star pairing is the brand's own two-colour
+relationship from `Trasnparent-StdLogo.png`. Only the ground moves:
+
+| Colourway | Ground | RGB | Reads as |
+| --- | --- | --- | --- |
+| **Navy** | `#131F48` | 19 · 31 · 72 | the approved default — clear separation from the pack, still soft |
+| **Deep Red** | `#6A1B32` | 106 · 27 · 50 | warmest of the three; closest in hue to the burnt-orange pack, so it harmonises but separates least at distance |
+| **Ink** | `#061927` | 6 · 25 · 39 | highest contrast, sharpest read; close to black at patch size |
+
+`patch-colourways-on-bag.png` shows all three on the actual pack — worth looking
+at before choosing, because they behave differently against orange than they do
+on a swatch.
 
 The brand pack defines colour in hex only — there is no Pantone system to
 reference. Match these RGB values off the mill's physical thread card and get a
 strike-off approved before bulk.
+
+### Worn
+
+Each colourway also renders lightly worn: the thread fades and warms a little,
+trail dust settles into the stitch valleys and along the bottom edge, and the
+raised satin picks up fibre bloom where it has rubbed. The geometry is
+untouched.
+
+Worn is a **rendering treatment only**. The production artwork
+(`patch-flat*.svg`) is never worn — a mill stitches the clean file, and wear is
+something the pack does over time.
 
 ### Construction
 
@@ -86,7 +116,12 @@ Scenes render the same either way — the difference only shows in the hand.
 ## Where it goes
 
 - **One patch design, everywhere.** Same artwork, same construction, in every
-  scene. No variants.
+  scene — and **one colourway**. Pick a ground and hold it across the set;
+  mixing them breaks the rule the story pack is built on.
+- **New or worn, pick one too.** A worn patch in some scenes and a fresh one in
+  others reads as a continuity error. The exception is if you want it to carry
+  meaning — a fresh patch in the opening scene and a worn one at the summit is a
+  deliberate device, not an accident, and it needs to move in one direction.
 - **Bags only.** No jacket patches, no second patch anywhere else on the kit.
 - **Same real-world size in every scene** — 63 mm on the pack. Apparent pixel
   size changes with distance and perspective, and nothing else.
@@ -109,6 +144,8 @@ character scenes too. All of them need to move to this patch.
 
 Paste this verbatim into any scene prompt so every image renders the same patch.
 
+Swap the ground colour word to match the colourway you picked.
+
 ```
 The backpack carries one sewn embroidered patch: a rounded-corner navy
 rectangle, 63 x 36 mm, wider than tall, with a merrowed overlock edge in the
@@ -121,7 +158,8 @@ upper front panel just below the lid seam, at the same physical size in every
 scene, and is the only patch anywhere in frame.
 ```
 
-Attach `patch-embroidered.png` as an image reference alongside it.
+Attach the matching render as an image reference alongside it —
+`patch-embroidered.png`, `-red.png` or `-ink.png`, or the `-worn` version.
 
 ---
 
@@ -145,6 +183,11 @@ type in a substitute font, or change the letter spacing.
 sh Branding/Patch/build/make.sh
 ```
 
-Traces the glyphs, composes the SVGs, renders the PNGs, and rebuilds the
-placement reference. Needs Python with Pillow and NumPy, plus a Chromium binary
-for the PNG step (`CHROME=/path/to/chrome` if it is not on `PATH`).
+Traces the glyphs, composes every colourway, renders the PNGs, and rebuilds both
+placement sheets. Needs Python with Pillow and NumPy, plus a Chromium binary for
+the PNG step (`CHROME=/path/to/chrome` if it is not on `PATH`).
+
+`render_png.py` checks each export's drawn content against its viewBox aspect
+and fails loudly if it does not match — headless Chromium's layout viewport is
+shorter than `--window-size`, which silently clips tall pages, and that check is
+what catches it.
