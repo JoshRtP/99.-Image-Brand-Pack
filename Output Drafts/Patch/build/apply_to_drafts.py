@@ -65,7 +65,10 @@ SCENES = {
     ],
     '3. Example story trellis - FINAL.png': [
         # row-2 close-up thumbnail — old patch measurable in the input
-        dict(center=(506, 354), angle=0, old_w=23),
+        # (previous measurement of 23px was wrong - re-read off a fresh grid,
+        # the old patch here is actually ~45px, which is why the first pass
+        # rendered a tiny, illegible patch on this thumbnail)
+        dict(center=(516, 364), angle=0, old_w=45),
         # hero panel at the top of the trellis — bag visible but never carried
         # a bag patch (only a jacket patch, off-brand); hand-picked to match
         # the apparent scale of the other close scenes at this camera distance
