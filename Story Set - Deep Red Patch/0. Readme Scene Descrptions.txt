@@ -1,0 +1,34 @@
+Here is what the entire package needs to have.
+
+1. Opening scene person pointing to mountain top
+
+2. Opening scene part 2 transition collage that has the opening scene and the checklist closing scene together as a full page version where the opening scene is the top half and the closing scene is the bottom half. 
+
+3. Story collage (7 picture are on the trellis #1 opening scene is the top banner then #2-#6 are the remaining flow, #7 bottom banner is the checklist and notebook) 
+
+4. Individual story scene #1 - story aspect ratio of mountain with a hand holding a compass rather than pointing 
+5. Individual story scene #2 - story aspect of the range finder 
+6. Individual story scene #3 backpack and gear with supplies for 36 hours 
+7. Individual story scene #4 - Main character holding the map with the planned route and eta of 8 hours 
+8. Individual story scene #5 - Main character holding the updated map with the red marker for alt route +4 hours
+9. Individual story scene #6 - The do not enter avoid the hazard picture 
+10. Final Closing scene full screen of the main character stargazing. 
+
+There are also 2 alternate Images for #5 and #10. Listed as 5a. and 10.
+
+---
+
+For image and brand rationalization, please apply these rules across the entire set:
+
+- Preserve the original numbering and image roles so you get the same complete package back.
+- Use one identical sewn backpack patch design everywhere. The approved patch is the stacked Terra Nexus logo with the star on the dark Terra Nexus navy background.
+- No mountain graphic above TERRA NEXUS anywhere.
+- No starless approximation of the approved patch.
+- Keep the patch at the same real-world physical size across scenes. Its apparent pixel size can naturally change with perspective and distance.
+- Keep its placement on the backpack consistent from scene to scene.
+- No jacket patches and no additional sewn patches elsewhere.
+- Correct every occurrence of “For Auditor” → “ISO Auditor”, while retaining the handwritten/signature treatment.
+- Preserve the important story content, framing, maps, screens, props, text, and scene numbering rather than unnecessarily regenerating them.
+- Then normalize lighting/color treatment across the series without making every scene artificially identical.
+
+There is a branding folder in the root directory which includes official logos, favicon, our brand's sticker, and an extended color palette that can be applied for images.  If any prompt calls for a new character to be created there is a people folder with various Terra Nexus people that can be used as a reference.
