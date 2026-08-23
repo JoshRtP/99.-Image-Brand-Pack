@@ -16,6 +16,7 @@ written to:
 | `Jacket/` | The wind shell — technical flats, spec sheet, three colourways. |
 | `Story Set - Deep Red Patch/` | The full story package with the Deep Red patch on the pack, same filenames and numbering as the input set. |
 | `Character/` | Costume turnaround — the main character in the wind shell at five angles, plus the prompt kit for regenerating her consistently. |
+| `Scenes/` | **Start here for a full re-render.** The generation brief that regenerates all twelve story scenes with the patch and jacket branding baked in, instead of composited on afterward. |
 
 Each folder has its own README and a `build/` directory that regenerates it from
 the source material. Nothing here is hand-edited output — change a script, run
