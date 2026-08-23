@@ -16,8 +16,7 @@ G = json.load(open(GLYPHS))
 CAP_SRC, BASELINE = 219.0, 254.0
 TERRA = ['T', 'E1', 'R1', 'R2', 'A']
 NEXUS = ['N', 'E2', 'X', 'U', 'S']
-DX = 129.6 - G['x']['N']          # NEXUS indent, from the approved lockup
-DY = 1.125 * CAP_SRC              # line advance
+DY = 1.125 * CAP_SRC              # line advance, as in the approved lockup
 
 # ---- pack fabric, measured off the story frames ----------------------------
 FABRIC_LIT = '#AA642F'
@@ -35,10 +34,52 @@ THREADS = {
 }
 PRIMARY = 'deep-red'
 
+NUM = re.compile(r'[MLQZ]|-?\d+(?:\.\d+)?')
+
+
+def gbox(name):
+    xs, i = [], 0
+    for t in NUM.findall(G['glyphs'][name]):
+        if t in 'MLQZ':
+            i = 0; continue
+        if i % 2 == 0:
+            xs.append(float(t))
+        i += 1
+    return min(xs), max(xs)
+
+
+def line_extent(names):
+    left = min(G['x'][n] + gbox(n)[0] for n in names)
+    right = max(G['x'][n] + gbox(n)[1] for n in names)
+    return left, right - left
+
+
+def layout():
+    """Flush stack: TERRA directly over NEXUS, left edges aligned, both lines
+    tracked to the same width.
+
+    The approved lockup indents NEXUS by 0.592 cap heights. That reads well on a
+    patch but it is a fiddly relationship to describe to an image generator and
+    an easy one for it to get wrong. Squared off into two lines of equal width it
+    becomes trivially describable and trivially checkable.
+    """
+    tl, tw = line_extent(TERRA)
+    nl, nw = line_extent(NEXUS)
+    target = max(tw, nw)
+    placed = []
+    for names, left, w, dy in ((TERRA, tl, tw, 0.0), (NEXUS, nl, nw, DY)):
+        extra = (target - w) / (len(names) - 1) if len(names) > 1 else 0.0
+        for i, n in enumerate(names):
+            placed.append((n, -left + i * extra, dy))
+    return placed, target
+
+
+PLACED, INK_W = layout()
+TRACK_MM_PER_GAP = None            # filled in below, once K is known
+
 # ---- geometry, millimetres -------------------------------------------------
 WORD_W = 85.0                     # finished width of the stacked wordmark
-NEXUS_RIGHT = DX + G['x']['S'] + 154.0    # S ends at 1959 in the source
-BBOX = (0.0, 35.0, max(868.0, NEXUS_RIGHT), 256.0 + DY)   # letters only, no star
+BBOX = (0.0, 35.0, INK_W, 256.0 + DY)     # letters only, no star
 BW = BBOX[2] - BBOX[0]
 BH = BBOX[3] - BBOX[1]
 K = WORD_W / BW                   # mm per source unit
@@ -46,9 +87,6 @@ CAP_MM = CAP_SRC * K
 WORD_H = BH * K
 STEM_MM = 0.192 * CAP_MM
 BAR_MM = 0.164 * CAP_MM
-
-NUM = re.compile(r'[MLQZ]|-?\d+(?:\.\d+)?')
-
 
 def bake(d, k, tx, ty):
     out, i = [], 0
@@ -68,8 +106,7 @@ def glyph(name, k, ox, oy, dx=0.0, dy=0.0):
 
 
 def wordmark(k, ox, oy):
-    return ('\n        '.join(glyph(n, k, ox, oy) for n in TERRA) + '\n        ' +
-            '\n        '.join(glyph(n, k, ox, oy, DX, DY) for n in NEXUS))
+    return '\n        '.join(glyph(n, k, ox, oy, dx, dy) for n, dx, dy in PLACED)
 
 
 def _rgb(h):

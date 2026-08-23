@@ -6,7 +6,7 @@ OUT = S.OUT
 INK, PAPER, RULE = '#061927', '#F4F2EC', '#7C8493'
 FONT = "'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif"
 MONO = "'SF Mono', Menlo, 'DejaVu Sans Mono', monospace"
-W, H = 396.0, 214.0
+W, H = 396.0, 236.0
 MARGIN, COL2 = 20.0, 232.0
 ART_K = 1.35
 AX, AY = 28.0, 58.0
@@ -81,12 +81,19 @@ def build():
                        '40 mm below the lid seam']),
     ], w=196, keyw=32)
 
-    notes, _ = block(COL2, 138, 'WHY LETTERS ONLY', [
+    notes, ny = block(COL2, 138, 'ARRANGEMENT', [
+        ('', ['TERRA directly over NEXUS, left edges aligned, both lines',
+              'tracked to the same width. This is NOT the approved lockup,',
+              'which indents NEXUS by 0.592 cap heights - squared off, the',
+              'block is far easier to specify and to check.']),
+    ], w=144, keyw=0)
+    notes2, _ = block(COL2, ny + 5, 'WHY LETTERS ONLY', [
         ('', ['The compass star cannot be foamed. Its minor rays taper',
               'below 1 mm and foam needs 2 mm to hold an edge - it would',
               'come out as a blob. If the star has to appear, run it as',
               'flat satin beside the foamed letters, not through them.']),
     ], w=144, keyw=0)
+    notes = notes + '\n  ' + notes2
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}mm" height="{H}mm">
   <title>Terra Nexus direct raised stitch - specification</title>

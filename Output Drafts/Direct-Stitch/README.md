@@ -32,19 +32,35 @@ It replaces the patch on the panel. Do not run both.
 
 ---
 
+## Arrangement
+
+**TERRA directly over NEXUS, left edges aligned, both lines tracked to the same
+width.** A squared-off block.
+
+This is deliberately *not* the approved lockup, which indents NEXUS by 0.592 cap
+heights and sets the star at the upper right. That relationship reads beautifully
+on a patch, but it is fiddly to describe to an image generator and easy for one
+to get wrong. Squared off, the whole mark is one sentence — two lines, same
+width, flush left — and a wrong result is obvious at a glance.
+
+The two lines are naturally within 1.4 % of each other (TERRA 867.9 units, NEXUS
+856.0 at cap 219), so NEXUS is tracked out by 3.0 units per gap — **0.29 mm** at
+finished size — to make the block exactly justified. Imperceptible; it just means
+the edges line up.
+
 ## Size
 
 | | |
 | --- | --- |
 | Finished width | **85 mm** |
-| Height | 40.3 mm |
-| Cap height | 18.89 mm |
-| Stem | 3.63 mm |
-| Narrowest bar | 3.10 mm |
+| Height | 45.8 mm |
+| Cap height | 21.45 mm |
+| Stem | 4.12 mm |
+| Narrowest bar | 3.52 mm |
 
-The narrowest stroke matters here: 3 mm foam-backed satin holds a clean edge,
-2 mm is the floor, and below that foam blows out. At 85 mm this design has
-margin. Do not scale it below **60 mm** finished width.
+The narrowest stroke matters here: foam-backed satin needs 2 mm to hold an edge
+and blows out below it. At 85 mm this design has real margin. Do not scale it
+below **55 mm** finished width, where the narrowest bar reaches 2.28 mm.
 
 ## Thread — ranked by how quietly it sits
 
@@ -82,6 +98,24 @@ disappear in every light rather than mostly disappear, take Olive.
 The compass star cannot be foamed. Its minor rays taper below 1 mm and foam needs
 2 mm to hold an edge — it would come out as a blob. If the star has to appear,
 run it as flat satin beside the foamed letters, never through them.
+
+## Prompt language
+
+For scene generation, this is the whole mark in one paragraph:
+
+```
+On the pack's upper front panel, the words TERRA and NEXUS are embroidered
+directly into the fabric in heavy block capitals — TERRA on the first line,
+NEXUS directly beneath it, both lines the same width with their left edges
+aligned, forming a squared-off block about 85 mm wide. The thread is a deep
+oxblood red only slightly darker than the rust-orange fabric, so the lettering
+reads mostly as raised texture and catches the light along its top edges. The
+stitching stands proud of the panel and casts a soft shadow. There is no patch,
+no border, no background panel behind the letters, and no other graphic.
+```
+
+Swap the thread description if you pick a different colourway:
+warm charcoal → `a warm dark charcoal`, olive → `a deep olive green`.
 
 ## Rebuilding
 
