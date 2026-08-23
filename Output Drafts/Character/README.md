@@ -18,8 +18,9 @@ shows the Rev B cut of the jacket, which no photograph of her shows yet.
 
 | File | What it is |
 | --- | --- |
-| **`GENERATION-BRIEF.md`** | **Start here if you have an image generator.** Twelve shots, each with its prompt and the exact reference files to attach, in the order they must be run. |
-| `shots.json` | The same shot list, machine readable, for scripting against an image API. |
+| **`HANDOFF-PROMPT.md`** | **Start here.** One block to paste into a Claude session that has image generation — it fetches everything else itself. |
+| `GENERATION-BRIEF.md` | **Start here if you have an image generator.** Twelve shots, each with its prompt and the exact reference files to attach, in the order they must be run. |
+| `shots.json` | The shot list machine-readable — 20 shots, prompts pre-assembled, every reference as a fetchable URL. This is what an agent reads. |
 | `plates/generated/` | Where generated images go. The sheet rebuilds around whatever is there. |
 | `character-sheet.png` | **Primary.** Real photographic plates by angle, plus detail crops, the locked description, and what has no reference at all. |
 | `plates/` | The individual plates, cut unretouched from the story frames. |
