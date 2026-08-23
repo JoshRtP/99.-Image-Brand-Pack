@@ -74,7 +74,11 @@ them are the patch on the pack, so none were touched here.
 - In `3. Example story trellis` the patch lands at 23 px across. The ground
   colour and the star read; the wordmark cannot resolve at that size. That is a
   property of the collage, not of the composite.
-- These are composites, not regenerated frames. They are correct and consistent
-  and can ship, but if the set is ever re-rendered from prompts, use the prompt
-  block in `Output Drafts/Patch/README.md` instead and let the patch come out of the
-  generator.
+- These are composites, not regenerated frames. Composited alignment and
+  sizing errors kept resurfacing across three rounds of fixes in
+  `Ouput Pictures - Updated Images/` — a composite can only warp what's already
+  in the photo, it can't correct a patch that was never drawn to a consistent
+  real-world size, or put a slim-cut jacket into a photo shot in the old loose
+  one. **`Output Drafts/Scenes/GENERATION-BRIEF.md` is the fix**: it regenerates
+  every scene from a prompt with the patch and the Rev B jacket branding baked
+  in at generation time instead of composited on after.

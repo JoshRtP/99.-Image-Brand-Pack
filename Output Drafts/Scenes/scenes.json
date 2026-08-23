@@ -1,0 +1,156 @@
+{
+  "base_block": "A woman in her late twenties, athletic build, about 168 cm, mid-brown hair pulled into a mid-height ponytail with loose flyaway strands at the crown. [SAME FACE AS id-face-front.png IF THE SHOT SHOWS IT]. She wears the Terra Nexus wind shell: a slim, close-fitting single-layer hooded shell in glacier blue (#5A90BE), raglan sleeves, princess seams giving a nipped waist, hood worn down and bunched behind the neck, full-length front zip closed. Long shaped cuffs with thumbholes, lying flat. Block capitals wrap the cuffs: TERRA around the left wrist, NEXUS around the right, printed in white. The jacket carries no other marking of any kind - nothing on the shoulder, upper arm or chest. Slim dark charcoal technical trousers, low brown approach boots. She carries a rust-orange hiking backpack; a rectangular embroidered patch, dark red (#6A1B32), lightly worn and faded, reading TERRA NEXUS with a small star between the words, sits centred on the pack's upper front panel, just below the lid seam - no mountain graphic, no other patch anywhere. Golden hour alpine light, photographic, natural skin texture.",
+  "negative_prompt": "patch, logo or mark on the shoulder, upper arm or chest of the jacket; mountain graphic on the pack patch; starless pack patch; second sewn patch anywhere; boxy or oversized jacket fit; gathered or elasticated cuffs; hood worn up; misspelled or garbled cuff text; misspelled or garbled patch text; \"For Auditor\" (must read \"ISO Auditor\"); illegible or garbled sticker/label text; second person in frame unless the shot calls for one; text overlay; watermark",
+  "shots": [
+    {
+      "id": "1-opening-scene",
+      "maps_to_scene": "1. Opening Scene",
+      "used_in_collages": ["2. Transition to trellis", "3. Example story trellis"],
+      "aspect": "16:9",
+      "prompt": "Seen from behind and slightly to the side, she stands on a rocky alpine ridge at golden hour, pointing with her right arm outstretched toward a distant snow-capped peak with a small flag at its summit. A river winds through a forested valley below between her and the mountain. Sun low near the horizon, dramatic clouds.",
+      "uses_base_block": true,
+      "references": [
+        "Output Drafts/Character/character-sheet.png",
+        "Ouput Pictures - Updated Images/1. Opening Scene - FINAL.png"
+      ]
+    },
+    {
+      "id": "checklist-notebook",
+      "maps_to_scene": null,
+      "used_in_collages": ["2. Transition to trellis", "3. Example story trellis"],
+      "aspect": "3:2",
+      "prompt": "Overhead flatlay on dark rock: an open spiral-bound field notebook, left page a handwritten checklist reading \"YOU ARE HERE / PLANNED PATH: 8 HOURS / ALTERNATE PATH: +4 HOURS (TOTAL: 12) / EQUIPMENT PACKED: 36 HOURS OF SUPPLIES / AREAS TO AVOID: KNOWN\", signed \"ISO Auditor\" in a cursive signature with \"valid: Aug. 2026 - July. 2028\" beneath it and a small stamp reading \"CLIMATE\" above legible smaller text - right page a hand-drawn topographic map with a compass rose, a green \"START (YOU ARE HERE)\" marker, a dashed red \"PLANNED PATH (8 HOURS)\" line to a red triangle \"DESTINATION\" marker, a dashed blue \"ALTERNATE PATH (+4 HOURS)\" line, and a hatched red \"DANGER - DO NOT ENTER\" zone. Surrounding props: a steel camp mug, a red multi-tool knife, a coiled paracord, a steel insulated bottle. Warm directional light, photographic.",
+      "uses_base_block": false,
+      "notes": "Text-critical shot. Corrects the original set's 'For Auditor' to 'ISO Auditor'.",
+      "references": [
+        "Branding/climate-sticker-03-sunfaded-vintage.png",
+        "Branding/Screenshot of Extended Colors for Branding.png"
+      ]
+    },
+    {
+      "id": "4-story-1-compass",
+      "maps_to_scene": "4. Story 1",
+      "aspect": "2:3",
+      "prompt": "First-person point of view, her right hand holding an open brass compass at chest height, the needle pointing toward camera-left. Beyond the compass, an alpine valley at golden hour with a winding river and a flagged summit in the distance. Her forearm in the lower frame wears the glacier-blue jacket sleeve; the cuff reading NEXUS is visible near the wrist.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Character/character-sheet.png"]
+    },
+    {
+      "id": "5-story-2-rangefinder",
+      "maps_to_scene": "5. Story 2",
+      "aspect": "2:3",
+      "prompt": "Seen from behind, over her shoulder, both hands raised holding a rugged handheld GPS rangefinder device toward the valley. The device screen shows coordinates \"45.7821° N  121.5234° W\", a radar-style distance graphic, and \"DISTANCE: 9 MILES\". Below in the valley, a small orange tent and a campfire with rising smoke are visible among the trees. Golden-hour ridge setting matching shot A.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/1-opening-scene.png", "Output Drafts/Character/character-sheet.png"]
+    },
+    {
+      "id": "5a-story-2-rangefinder-alt",
+      "maps_to_scene": "5a. Story 2-alt",
+      "aspect": "2:3",
+      "prompt": "Seen from directly in front and slightly below, both hands raised holding the device toward camera height, both jacket cuffs visible - TERRA on her left wrist, NEXUS on her right - the mountain and flagged summit framed behind the device.",
+      "uses_base_block": true,
+      "notes": "Most likely shot to need cuff wordmarks hand-corrected afterward.",
+      "references": [
+        "Output Drafts/Scenes/generated/1-opening-scene.png",
+        "Output Drafts/Character/character-sheet.png",
+        "Output Drafts/Patch/lockup-stacked.png"
+      ]
+    },
+    {
+      "id": "6-story-3-gear",
+      "maps_to_scene": "6. Story 3",
+      "aspect": "2:3",
+      "prompt": "Close still-life on rocky ground at golden hour: a rust-orange hiking backpack standing upright, a rectangular dark red embroidered patch centred on its upper front panel reading TERRA NEXUS with a small star between the words. Beside it, a steel insulated water bottle, a steel camp mug, a red multi-tool knife, and the same open field notebook as the checklist shot, closed to show only its cover edge. A coiled rope rests against the pack.",
+      "uses_base_block": false,
+      "notes": "The patch is the entire subject of this shot - verify pixel-for-pixel against reference before accepting.",
+      "references": [
+        "Output Drafts/Patch/patch-embroidered-red-worn.png",
+        "Output Drafts/Patch/patch-colourways-on-bag.png"
+      ]
+    },
+    {
+      "id": "7-story-4-map-planned",
+      "maps_to_scene": "7. Story 4",
+      "aspect": "2:3",
+      "prompt": "Seen from behind and to the side, she holds up a folded paper topographic map at chest height with both hands, examining it. Hand-drawn on the map in blue ink: the word \"eta\" and \"8 hours\" near the top-left, a dashed blue route line curving up to an arrow near the top-right. Golden-hour valley and mountain visible past the map. Backpack over shoulders, TERRA NEXUS patch visible on its upper front panel where the strap doesn't cover it.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/1-opening-scene.png", "Output Drafts/Character/character-sheet.png"]
+    },
+    {
+      "id": "8-story-5-map-altroute",
+      "maps_to_scene": "8. Story 5",
+      "aspect": "2:3",
+      "prompt": "Same setup as shot G, but the map now reads \"alt route\" and \"+4 hours\" in red ink near the top-left, with both a dashed red route line and a dashed blue route line converging toward a red triangle marker near the top-right.",
+      "uses_base_block": true,
+      "references": [
+        "Output Drafts/Scenes/generated/1-opening-scene.png",
+        "Output Drafts/Character/character-sheet.png",
+        "Output Drafts/Scenes/generated/7-story-4-map-planned.png"
+      ]
+    },
+    {
+      "id": "9-story-6-hazard",
+      "maps_to_scene": "9. Story 6",
+      "aspect": "2:3",
+      "prompt": "Seen from behind, she stands facing an erupting volcano across a blackened lava field at golden hour - thick dark ash plume rising from the crater, glowing lava visible at the vent and in cracks running down the slope. To her right, a weathered wooden trail sign reads \"FOAK SHORTCUT\" in white block letters on rust-red metal. Backpack over shoulders, TERRA NEXUS patch visible on its upper front panel.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Character/character-sheet.png", "Output Drafts/Patch/patch-embroidered-red-worn.png"]
+    },
+    {
+      "id": "10-outro-stargaze",
+      "maps_to_scene": "10. Outro Star Gaze",
+      "aspect": "16:9",
+      "prompt": "Wide shot from behind and above, she stands alone on a rocky outcrop at dusk, backpack on, looking out over a moonlit valley with a winding river toward two distant flagged peaks. Sky transitions from a fading orange horizon into deep blue-purple with visible stars.",
+      "uses_base_block": true,
+      "notes": "Drop 'golden hour' from the base block for this shot; use 'dusk, fading light, stars emerging' instead.",
+      "references": ["Output Drafts/Character/character-sheet.png", "Output Drafts/Scenes/generated/1-opening-scene.png"]
+    },
+    {
+      "id": "10a-outro-stargaze-alt",
+      "maps_to_scene": "10a. Outro Star Gaze-alt",
+      "aspect": "16:9",
+      "prompt": "Same setup as shot J, but framed closer, three-quarter back instead of directly behind, a third distant flagged peak visible at frame right.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/10-outro-stargaze.png", "Output Drafts/Character/character-sheet.png"]
+    },
+    {
+      "id": "vignette-taking-photo",
+      "maps_to_scene": null,
+      "used_in_collages": ["3. Example story trellis"],
+      "aspect": "4:3",
+      "prompt": "Seen from behind and to the side, she holds a small handheld device up to eye level with both hands as if photographing the valley view - the device screen shows a preview of the mountain and river landscape. Golden-hour ridge setting matching shot A. Backpack over shoulders, TERRA NEXUS patch visible on its upper front panel.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/1-opening-scene.png", "Output Drafts/Character/character-sheet.png"]
+    },
+    {
+      "id": "vignette-writing-map-planned",
+      "maps_to_scene": null,
+      "used_in_collages": ["3. Example story trellis"],
+      "aspect": "4:3",
+      "prompt": "Seen from behind and to the side, she holds the folded topographic map from shot G against her forearm, marking it with a pencil. The visible route text reads \"eta\" and \"8 hours.\"",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/7-story-4-map-planned.png"]
+    },
+    {
+      "id": "vignette-writing-map-altroute",
+      "maps_to_scene": null,
+      "used_in_collages": ["3. Example story trellis"],
+      "aspect": "4:3",
+      "prompt": "Same setup as vignette-writing-map-planned, but the map reads \"alt. route\" and \"+4 hours\" as in shot H.",
+      "uses_base_block": true,
+      "references": ["Output Drafts/Scenes/generated/8-story-5-map-altroute.png"]
+    }
+  ],
+  "collages": [
+    {
+      "maps_to_scene": "2. Transition to trellis",
+      "layout": "top half = 1-opening-scene, bottom half = checklist-notebook",
+      "assembled_not_generated": true
+    },
+    {
+      "maps_to_scene": "3. Example story trellis",
+      "layout": "top banner = 1-opening-scene; middle row = vignette-taking-photo, crop of 6-story-3-gear, vignette-writing-map-planned, vignette-writing-map-altroute, crop of 9-story-6-hazard; bottom banner = checklist-notebook",
+      "assembled_not_generated": true
+    }
+  ]
+}
