@@ -15,6 +15,7 @@ written to:
 | `Patch/` | The embroidered backpack patch — production artwork, embroidered and worn renders, spec sheet, three colourways. |
 | `Jacket/` | The wind shell — technical flats, spec sheet, three colourways. |
 | `Story Set - Deep Red Patch/` | The full story package with the Deep Red patch on the pack, same filenames and numbering as the input set. |
+| `Direct-Stitch/` | The alternative to the patch — the wordmark stitched straight onto the pack in a tone-on-tone thread, so it reads as relief rather than a label. |
 | `Character/` | Costume turnaround — the main character in the wind shell at five angles, plus the prompt kit for regenerating her consistently. |
 
 Each folder has its own README and a `build/` directory that regenerates it from
